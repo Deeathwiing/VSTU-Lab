@@ -1,4 +1,4 @@
-$(document).mousemove(function (event) {
+ $(document).mousemove(function (event) {
     windowWidth = $(window).width();
     windowHeight = $(window).height();
 
@@ -7,4 +7,17 @@ $(document).mousemove(function (event) {
 
     $('.radial-gradient').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, rgba(51, 81, 216, 0.699), rgb(58, 56, 56))');
 });
+
+
+$(window).scroll(function() {
+    $('#object').each(function(){
+    var imagePos = $(this).offset().top;
+
+    var topOfWindow = $(window).scrollTop();
+        if (imagePos < topOfWindow+400) {
+            $(this).addClass("bigEntrance");
+        }
+    });
+
+
 
