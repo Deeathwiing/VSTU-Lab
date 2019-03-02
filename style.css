@@ -1,0 +1,17 @@
+.radial-gradient {
+    position:fixed;
+    top:0px;
+    left:0px;
+    height:100%;
+    width:100%;
+    
+    /*Fallback if gradeints don't work */
+    background: rgb(116, 110, 110);
+    /*Linear gradient... */
+    background: 
+      radial-gradient(
+       at center, rgba(106, 119, 175, 0.699), rgb(116, 110, 110)
+      );
+  }
+  
+  
