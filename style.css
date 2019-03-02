@@ -32,29 +32,47 @@
   }
   
   header, footer {
+      float: left;
       width: 100%;
      background-color: #fff; 
-      min-height: 50px;
+      min-height: 1%;
+      max-height: 15%
+      
 
   }
 
 
   header {
       border-bottom: 2px solid silver;
-      padding: 1%;
+      padding: 0.5%;
+      background: rgb(58, 56, 56);
+
+    background: 
+      radial-gradient(
+       at left, silver, rgb(58, 56, 56)
+      );
   }
+      
+  }
+
+
+#items{float: left; width: 100%;}
+
 
   footer {
     border-top: 2px solid silver;
     margin-top: 10px;
     padding: 0.5%;
+    position: fixed;
+    left: 0; bottom: 0;
    
 }
 footer img {
-    width: 8%;
+    width: 30px;
     margin-right: 10px; 
     float: right;
     padding: 0.5%;
+    margin: 0.1%;
 }
 
 #copyright{
@@ -62,7 +80,7 @@ footer img {
 }
 
 a {
-    color: rgb(251, 255, 0);
+    color: rgb(225, 223, 230);
     text-decoration: none ;
     transition: all.6s ease;
     -moz-transition: all.6s ease;
@@ -96,9 +114,8 @@ img {
 
 #logo {
     font-size: 2em;
-    font-family: Comic Sans MS, sans-serif;
-    padding: 1%;
-    		
+    font-family: "Georgia", sans-serif;
+    padding: 5px;		
 }
 
 #logo img {
@@ -106,24 +123,35 @@ img {
     height: 1.5%;
 }
 
-.contact {
+.contact, .menu {
     font-size: 1.5em;
-    font-family: Comic Sans MS, sans-serif;
+    font-family: "Georgia", sans-serif;
     margin-left: 20px;
+    
+}
+.menu {
+    color:rgb(14, 13, 8);
 }
 
 
 input[type=text].filedSearch {
-    border-radius: 2px;
+    height: 25px;
+    border-radius: 7px;
     border: 2px solid silver;
     padding: 5px;
-    margin-left: 20px; 
+    margin-left: 50px; 
 
 }
 input[type=text].filedSearch:focus {
-    border: 2px solid rgb(251, 255, 0);
+    
+    width: 35%;
+    border: 2px solid silver;
+    transition: all.9s ease;
+    -moz-transition: all.9s ease;
+    -webkit-transition: all.9s ease;
+    -ms-transition: all.9s ease;
 }
-#object{visibility: hidden;}
+#object{visibility: hidden; margin-right: 1%;}
 .right {float:right}
 .left {float: left}
 
@@ -133,9 +161,10 @@ input[type=text].filedSearch:focus {
 } 
 
 
-footer, #page-wrap::after {height: 10px;}
+ #page-wrap::after {height: 10px;}
 
 #page-wrap {
-    min-height: 94%;
+    min-height: 95%;
     margin-bottom: -10px;
 } 
+
