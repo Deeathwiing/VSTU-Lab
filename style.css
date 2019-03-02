@@ -1,4 +1,4 @@
- .radial-gradient {
+ /* .radial-gradient {
     position:fixed;
     top:0px;
     left:0px;
@@ -10,10 +10,14 @@
       radial-gradient(
        at center, rgba(51, 81, 216, 0.699), rgb(58, 56, 56)
       );
-  } 
+  } */
 
   * {
     outline: none;
+  }
+
+  html {
+      height: 100%;
   }
   body {
      
@@ -28,7 +32,7 @@
   }
   
   header, footer {
-      width: 98%;
+      width: 100%;
      background-color: #fff; 
       min-height: 50px;
 
@@ -43,9 +47,18 @@
   footer {
     border-top: 2px solid silver;
     margin-top: 10px;
-    padding: 1%;
+    padding: 0.5%;
+   
+}
+footer img {
+    width: 8%;
+    margin-right: 10px; 
+    float: right;
+    padding: 0.5%;
+}
 
-
+#copyright{
+    padding-top: 0.5%;
 }
 
 a {
@@ -93,7 +106,7 @@ img {
     height: 1.5%;
 }
 
-#contact {
+.contact {
     font-size: 1.5em;
     font-family: Comic Sans MS, sans-serif;
     margin-left: 20px;
@@ -105,9 +118,24 @@ input[type=text].filedSearch {
     border: 2px solid silver;
     padding: 5px;
     margin-left: 20px; 
+
 }
 input[type=text].filedSearch:focus {
     border: 2px solid rgb(251, 255, 0);
 }
 #object{visibility: hidden;}
-    
+.right {float:right}
+.left {float: left}
+
+ #page-wrap::after {
+ content: "";
+  display: block; 
+} 
+
+
+footer, #page-wrap::after {height: 10px;}
+
+#page-wrap {
+    min-height: 94%;
+    margin-bottom: -10px;
+} 
