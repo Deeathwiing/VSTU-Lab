@@ -3,7 +3,7 @@ body, html {
     height: 100%;
     font-family: 'Georgia', sans-serif;
     color: #222;
-
+   
 }
 
 .navbar-brand img{
@@ -12,4 +12,27 @@ width: 40px;
 
 #NewItems {
     color: red;
+}
+
+
+.navbar-nav li {
+    padding-right: 20px; 
+}
+
+.nav-link {font-size: 1.1em !important}
+
+.carousel-inner {
+    height: 300px;
+}
+
+.carousel-inner img{
+
+    transform: translateY(-30%);
+    width: 100%;
+    height: 100%;
+
+}
+
+.navbar.navbar-expand-md.navbar-light.bg-light.sticky-top {
+    text-shadow: 0.1px 0.1px 0.1px rgb(32, 21, 21);
 }
