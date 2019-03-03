@@ -1,12 +1,4 @@
- /*$(document).mousemove(function (event) {
-    windowWidth = $(window).width();
-    windowHeight = $(window).height();
 
-    mouseXpercentage = Math.round(event.pageX / windowWidth * 100);
-    mouseYpercentage = Math.round(event.pageY / windowHeight * 100);
-
-    $('.filedSearch').css('background', 'radial-gradient(at ' + mouseXpercentage + '% ' + mouseYpercentage + '%, rgba(51, 81, 216, 0.699), rgb(58, 56, 56))');
-}); */
 
 
 $(window).scroll(function() {
@@ -14,7 +6,7 @@ $(window).scroll(function() {
     var imagePos = $(this).offset().top;
 
     var topOfWindow = $(window).scrollTop();
-        if (imagePos < topOfWindow+400) {
+        if (imagePos < topOfWindow+200) {
             $(this).addClass("bigEntrance");
         }
     });

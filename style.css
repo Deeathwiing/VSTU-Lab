@@ -1,17 +1,4 @@
- /* .radial-gradient {
-    position:fixed;
-    top:0px;
-    left:0px;
-    height:100%;
-    width:100%;
-    background: rgb(58, 56, 56);
-
-    background: 
-      radial-gradient(
-       at center, rgba(51, 81, 216, 0.699), rgb(58, 56, 56)
-      );
-  } */
-
+  
   * {
     outline: none;
   }
@@ -46,14 +33,15 @@
       border-bottom: 2px solid silver;
       padding: 0.5%;
       background: rgb(58, 56, 56);
-
-    background: 
+      background: 
       radial-gradient(
        at left, silver, rgb(58, 56, 56)
       );
   }
+
+ 
       
-  }
+  
 
 
 #items{float: left; width: 100%;}
@@ -73,6 +61,7 @@ footer img {
     float: right;
     padding: 0.5%;
     margin: 0.1%;
+    margin-right: 25px;
 }
 
 #copyright{
@@ -127,10 +116,12 @@ img {
     font-size: 1.5em;
     font-family: "Georgia", sans-serif;
     margin-left: 20px;
+    border-radius: 8px;
+    background-color: rgb(109, 8, 8);
     
 }
 .menu {
-    color:rgb(14, 13, 8);
+    color:rgb(225, 223, 230);
 }
 
 
