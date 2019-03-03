@@ -216,6 +216,7 @@ slideRight
 	-webkit-animation-timing-function: ease-in-out;		
 
 	visibility: visible !important;	
+	max-width: 100%;
 }
 
 @keyframes slideRight {
