@@ -1,6 +1,7 @@
 
 
 
+/*
 $(window).scroll(function() {
     $('#object').each(function(){
     var imagePos = $(this).offset().top;
@@ -12,4 +13,4 @@ $(window).scroll(function() {
     });
 
 
-
+*/

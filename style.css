@@ -68,8 +68,33 @@ width: 40px;
     padding: 1%;
 }
 
-.navbar-nav ul li{
-    Vertical-align: middle;
+
+
+
+#logo {
+    padding-left: 20%;
+    padding-right: 20%;
+    font-size: 200%;
+}
+
+.nav-item {
+    font-size: 110%;
 }
 
 
+
+#object, #logo, .collapse.navbar-collapse {
+    vertical-align: middle;
+} 
+
+.btn.btn-outline-success.my-2.my-sm-0.text-dark.bg-light {
+    border: 2px inset silver;
+}
+
+.form-inline.py-1{  
+width: 350px;
+}
+
+.form-control.mr-sm-2 {
+    width: 250px;
+}

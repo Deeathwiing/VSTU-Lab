@@ -37,52 +37,56 @@
 <body>
 
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
-        <div class="container-fluid">
+        <div class="container-fluid p-1">
 
-            <a href="#" class="navbar-brand"><img id="object" class="slideRight" src="icon.png" alt="OM"></a>
+            <a href="#" class="navbar-brand"><img id="object" class="" src="icon.png" alt="OM"><span id="logo">Vape
+                    Shop</span></a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbarResponsive">
 
                 <span class="navbar-toggler-icon"></span>
 
             </button>
 
+
+
             <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto " >
-
-                    <li class="nav-item active ">
-                        <a href="#" class="nav-link" >Главная</a>
-                    </li>
+                <ul class="navbar-nav ml-auto ">
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link">Контакты</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Атомайзеры</a>
-                    </li>
-
-
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Электронные парогенераторы</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Жидкость для электронных парогенераторов</a>
+                        <form class="form-inline py-1">
+                            <input class="form-control mr-sm-2  " type="search" placeholder="Введите название товара"
+                                aria-label="Search">
+                            <button class="btn btn-outline-success my-2 my-sm-0 text-dark bg-light"
+                                type="submit">Поиск</button>
+                        </form>
                     </li>
 
 
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Запчасти и комплектующие</a>
+
+
+                    <li class="nav-item dropdown ">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false" href="#">Каталог</a>
+
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Контакты</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Атомайзеры</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Электронные парогенераторы</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Жидкость для электронных парогенераторов</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Запчасти и комплектующие</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Все для самозамеса</a>
+                        </div>
+
                     </li>
 
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Аксессуары</a>
-                    </li>
 
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Все для самозамеса</a>
-                    </li>
+
 
                     <li class="nav-item">
                         <a href="#" class="nav-link">Новости и предложения</a>
@@ -97,7 +101,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a href="#" class="nav-link"><span id="NewItems">Новинки!</span></a>
+                        <a href="#" class="nav-link"><span id="NewItems">Новинки и акции!</span></a>
                     </li>
 
                 </ul>
@@ -109,7 +113,7 @@
     </nav>
 
 
-    <div class="stock">
+    <div class="stock ">
 
         <span class="left-carousel">
             <div class="carousel slide" data-ride="carousel" id="slides">
@@ -143,7 +147,7 @@
     </div>
 
 
-    
+
 
 
 
