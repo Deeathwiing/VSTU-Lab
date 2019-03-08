@@ -3,7 +3,7 @@
 
 <head>
     <!--Reset css -->
-    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="css/reset.css">
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script defer="defer" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -36,7 +36,7 @@
 
 <body>
 
-    <header class="container mb-3 p-0">
+    <header class="container my-3  p-0">
 
         <div class="row m-0 ">
             <div class="carousel slide pl-0 order-first col" data-ride="carousel" id="slides">
@@ -45,11 +45,12 @@
                 <div class="carousel-inner">
 
                     <div class="carousel-item active ">
-                        <img class="d-block w-100" src="image/slide1.jpg" alt="blu-15BYN">
+                        <a href="#"> <img class="d-block w-100" src="image/slide1.jpg" alt="blu-15BYN"></a>
                     </div>
 
                     <div class="carousel-item ">
-                        <img class="d-block w-100" src="image/slide2.jpg" alt="30% CashBack for Happy Birthday">
+                        <a href="#"> <img class="d-block w-100" src="image/slide2.jpg"
+                                alt="30% CashBack for Happy Birthday"></a>
                     </div>
 
                     <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
@@ -62,12 +63,12 @@
                     </a>
                 </div>
 
-                
+
 
             </div>
 
             <div class="image-right col p-0">
-                <img class="d-block w-100" src="image/slide2.jpg" alt="30% CashBack for Happy Birthday">
+                <a href="#"><img class="d-block w-100" src="image/slide2.jpg" alt="30% CashBack for Happy Birthday"></a>
             </div>
 
         </div>
@@ -78,20 +79,21 @@
 
 
 
-    <header class="container p-0">
+    <header class="container mb-3 ">
 
 
 
-        <nav class="navbar row pr-0 ml-0 navbar-expand-md navbar-light bg-light shadow">
+        <nav class="navbar row  navbar-expand-md navbar-light bg-light shadow ">
 
 
 
-            <div class=" row m-3 "> <a href="#" class="navbar-brand "><img id="object" class="" src="image/icon.png"
-                        alt="OM"><span id="textLogo" class="ml-3">Vape Shop</span></a> </div>
+            <div class=" col m-1 mr-4 "> <a href="#" class="navbar-brand "><img id="object" class="" src="image/icon.png"
+                        alt="OM"><span id="textLogo" class="ml-3">Vape Shop</span></a> 
+                    </div>
 
 
 
-            <button class="navbar-toggler mr-2" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+            <button class="navbar-toggler mr-1" type="button" data-toggle="collapse" data-target="#navbarResponsive">
 
                 <span class="navbar-toggler-icon"></span>
 
@@ -99,9 +101,9 @@
 
 
 
-            <div class="collapse navbar-collapse col " id="navbarResponsive">
+            <div class="collapse navbar-collapse  col " id="navbarResponsive">
 
-                <ul class="navbar-nav row">
+                <ul class="navbar-nav row d-flex justify-content-around  ">
 
                     <li class="nav-item">
                         <a href="#" id="signIn" class="nav-link font-weight-bold ">Вход</a>
@@ -122,6 +124,7 @@
                             aria-haspopup="true" aria-expanded="false" href="#">Каталог</a>
 
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+
                             <a class="dropdown-item" href="#">Контакты</a>
                             <div class="dropdown-divider"></div>
                             <a class="dropdown-item" href="#">Атомайзеры</a>
@@ -157,10 +160,10 @@
                     </li>
 
 
-                    <li class="nav-item ml-2">
-                        <form class="form-inline py-1">
-                            <input class="form-control mr-sm-2 shadow-lg " type="search" placeholder="Поиск"
-                                aria-label="Search">
+                    <li class="nav-item ml-2 ">
+                        <form class="form-inline  py-1 ">
+                            <input class="form-control mr-sm-2  shadow-lg  " id="Search" type="search"
+                                placeholder="Поиск" aria-label="Search">
                             <button class="btn btn-outline-secondary  my-2 my-sm-0 text-dark bg-light"
                                 type="submit">Поиск</button>
                         </form>
@@ -178,163 +181,177 @@
     </header>
 
 
-    <section class="container mt-3">
+    
 
-        <div class="row">
+<div class="container p-0 d-flex flex-row"> 
+         
 
+        <aside class="d-flex flex-column m-1 col p-0 sticky-top" id="deleteAside">
 
-            <aside class="col-3">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, libero quisquam sapiente, eum temporibus
-                eveniet totam, veniam harum suscipit tempora velit alias delectus cumque. Delectus molestiae mollitia
-                accusamus consequuntur, corporis facilis ipsa, totam ab fugit repellat maxime, at voluptatibus rem
-                distinctio. Illo unde veritatis temporibus illum commodi ad accusamus incidunt?
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio vitae esse impedit, molestiae maxime
-                delectus, laborum consectetur placeat nobis ipsa soluta minus unde cumque quidem fugiat est iste animi
-                natus ex dolorum rem obcaecati culpa. Ut distinctio, quos repellat reiciendis possimus deleniti
-                provident illo perspiciatis a, enim accusantium ab quia!
-            </aside>
-
-            <div class="content col-9">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Temporibus maiores unde, atque ipsam veniam
-                vero voluptate numquam aut beatae. Non quaerat deserunt expedita corporis aspernatur pariatur dolor
-                eaque eveniet sint!
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptates perferendis cupiditate accusamus
-                unde possimus, laudantium at ipsum facere repellat eligendi deserunt aspernatur inventore, reiciendis
-                voluptatibus quia similique deleniti nulla hic obcaecati sequi! Quod nihil qui odit est esse fugiat
-                perspiciatis voluptas nostrum nobis repellendus rerum iste magnam, molestias ratione laborum quis
-                facilis at! Nisi facere illum mollitia excepturi porro, dolore optio, delectus molestiae doloremque
-                natus modi suscipit alias cupiditate reprehenderit deserunt distinctio maxime eaque, quaerat
-                exercitationem ipsam iure. Delectus fugit neque deserunt voluptate voluptates temporibus error, labore
-                optio aliquam fuga cum quibusdam aliquid esse hic consequatur perferendis aut veritatis dignissimos?
-                Doloribus dolore quaerat cupiditate sint voluptatum in officia molestiae, unde ipsam, ex nihil facere
-                illum excepturi architecto officiis neque! Ea odio, dolorem hic, numquam impedit minus reiciendis rerum
-                sit quod fuga reprehenderit eligendi illum eaque! Maiores, tempore! Nam quaerat rerum odio voluptatibus
-                consectetur excepturi, modi temporibus atque, corporis reiciendis labore. Iure at veritatis inventore
-                voluptas reiciendis, dolorem minima. Impedit voluptate molestiae, a deserunt eaque blanditiis sequi
-                porro repellendus expedita repudiandae! Pariatur aspernatur autem quis possimus obcaecati et sapiente
-                voluptates quasi accusantium id enim sint corrupti nobis, magnam numquam expedita est rem quisquam
-                beatae ipsam atque modi voluptate. Inventore, labore culpa vel maxime praesentium quam a. Unde quam
-                corporis at officia. Provident quae culpa doloremque repudiandae corrupti, laudantium libero cumque odit
-                itaque nobis illo illum qui adipisci minus non quibusdam. Dignissimos explicabo error harum quia.
-                Aliquid tempora ut iure eos, architecto autem nostrum dolores impedit iusto nemo ducimus pariatur, quasi
-                et rerum in! In ut delectus libero illo cupiditate eaque voluptatibus reiciendis necessitatibus maxime,
-                eum blanditiis? Exercitationem unde labore veniam vitae! Facilis culpa atque vel commodi nemo iste est
-                quia ut pariatur, quae neque aliquid. Odit at nulla tempore, tempora, ab repudiandae quaerat similique
-                nisi dolore aperiam, minus ipsum rerum corrupti fugiat architecto quas asperiores? Atque dignissimos et,
-                nulla officia ratione rerum animi ducimus culpa aspernatur perferendis voluptates exercitationem,
-                debitis, eveniet eos. Omnis, dignissimos, molestias sit itaque optio fugiat numquam ipsum beatae
-                reiciendis eaque repellendus quibusdam dolore error totam, laborum possimus velit officia nisi
-                consequatur recusandae illo aperiam suscipit. Nam praesentium nesciunt quasi tempore non nisi enim omnis
-                iure animi numquam, deserunt iste illo blanditiis aspernatur molestias vitae doloremque placeat a
-                distinctio veniam dignissimos! Ipsa harum omnis dolore deserunt! Quasi quidem perspiciatis fuga eius,
-                incidunt dolorum vitae enim nisi sapiente ab culpa, nobis consequatur illum laudantium? Accusantium,
-                doloremque totam. Sapiente, laboriosam tempore quibusdam a neque reprehenderit repellat, ducimus alias
-                optio maiores, quisquam fugit provident! Nesciunt repellat non ipsam voluptas velit dolore deserunt
-                minus consectetur atque. Impedit non iure, quis facilis doloribus voluptates numquam corrupti possimus
-                id libero illum quidem ipsum aliquid aspernatur vitae ducimus aut, nostrum amet quasi totam ab. Facilis,
-                nostrum incidunt! Ipsam nesciunt error obcaecati sequi delectus nobis velit doloribus optio eius
-                laudantium necessitatibus, ullam eligendi consectetur accusamus harum expedita dolore dolorum, vel amet
-                non a aliquid. Impedit consequuntur voluptatum eum dicta. Dolorum deserunt odit, laudantium accusamus
-                dolorem quaerat earum, explicabo accusantium optio ea natus, aliquam aspernatur illum eveniet!
-            </div>
-        </div>
-    </section>
+                <nav class="nav flex-column navbar-light bg-light shadow  ">
+                        <ul class="navbar-nav p-4 ">
 
 
+                                <li class="nav-item col">
+                                        <a href="#"  class="nav-link font-weight-bold ">Главная</a>
+                                    </li>
+
+                                <li class="nav-item col">
+                                    <a href="#" id="signIn" class="nav-link font-weight-bold ">Вход</a>
+                                </li>
+            
+            
+                                <li class="nav-item col">
+                                    <a href="#" id="signUp" class="nav-link font-weight-bold">Регистрация</a>
+                                </li>
+      
+                                <li class="nav-item dropdown col">
+                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                                        aria-haspopup="true" aria-expanded="false" href="#">Каталог</a>
+            
+                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            
+                                        <a class="dropdown-item" href="#">Контакты</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Атомайзеры</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Электронные парогенераторы</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Жидкость</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Запчасти и комплектующие</a>
+                                        <div class="dropdown-divider"></div>
+                                        <a class="dropdown-item" href="#">Все для самозамеса</a>
+                                    </div>
+            
+                                </li>
+                                <li class="nav-item col">
+                                    <a href="#" class="nav-link">Новости и предложения</a>
+                                </li>
+            
+                                <li class="nav-item col">
+                                    <a href="#" class="nav-link">Заказ</a>
+                                </li>
+            
+                                <li class="nav-item col">
+                                    <a href="#" class="nav-link">Гарантия</a>
+                                </li>
+            
+                                <li class="nav-item col">
+                                    <a href="#" class="nav-link"><span id="NewItems">Новинки и акции!</span></a>
+                                </li>
+            
+            
+                                <li class="nav-item ml-1 row">
+                                    <form class="form-inline  py-1 ">
+                                        <input class="form-control mr-sm-2  shadow-lg  " id="asideSearch" type="search"
+                                            placeholder="Поиск" aria-label="Search">
+                                        <button class="btn btn-outline-secondary  my-2 my-sm-0 text-dark bg-light"
+                                            type="submit" id="asideSearchBtn">Поиск</button>
+                                    </form>
+                                </li>
+            
+                            </ul>
+                      </nav>
+
+        </aside>
+
+        <section class="d-flex flex-column m-1 p-2" id="section">
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nemo! Alias optio a, sint tempore dolorum dignissimos blanditiis, non illo eos officia accusamus iusto, amet mollitia autem reiciendis distinctio corporis consequuntur! Officia facilis error odio deleniti accusantium veritatis eligendi? Blanditiis laboriosam quas ullam et obcaecati, adipisci ab, minus accusantium assumenda deleniti quos illo temporibus sunt. Unde pariatur soluta asperiores, maxime ullam dolores, esse vitae quibusdam eum est deleniti totam accusamus voluptatibus officia facere. Optio, nostrum dignissimos! At omnis voluptatibus excepturi repellendus mollitia fugiat aliquam voluptas corporis quo dicta esse rerum ab ea, asperiores non velit dolores numquam vel a, hic consequatur nesciunt beatae distinctio? Distinctio quam saepe harum qui adipisci officia repellat veniam nam repellendus at commodi, eius sapiente nesciunt vitae, accusantium ea error. Non, velit eaque quia odio, iusto doloribus eligendi reprehenderit exercitationem esse facere amet officiis? Illum molestiae nulla corporis quod pariatur commodi magnam qui ratione minus ipsum sapiente natus temporibus quas labore mollitia expedita, perferendis fugit aspernatur delectus quaerat obcaecati repellendus. Atque quas voluptatem dolore nemo tempora suscipit similique rerum doloribus qui, repellat magni aut iste necessitatibus consequuntur, velit fuga consequatur beatae possimus! Reiciendis eveniet perferendis ipsam atque, sed consequuntur, possimus nobis eos exercitationem assumenda doloremque. Nobis odio laudantium a illo molestias cum magni laborum dolorem eveniet. Consectetur mollitia laboriosam cupiditate ducimus eum ratione iusto! Voluptate praesentium in laborum dignissimos iure, cupiditate accusantium odio pariatur quas omnis cumque explicabo porro fuga error quibusdam nesciunt perferendis quae labore. Quam incidunt a dignissimos deleniti natus, explicabo ducimus id excepturi voluptates, accusamus officiis quo est. Iusto eveniet dolorum rem quo illum facilis dignissimos quos quisquam. Neque ullam aliquam quam optio doloribus earum recusandae impedit? Ad voluptatum assumenda cumque magnam eos porro? Voluptate, exercitationem reprehenderit. Perferendis saepe odit tempore amet minus ipsum quasi fugit, nihil suscipit doloribus ipsa voluptas exercitationem omnis assumenda consequatur facilis in reprehenderit, nesciunt illo voluptatum nam corporis recusandae. Corporis similique, nisi animi molestias quisquam assumenda ipsam odit, earum temporibus voluptatum quas voluptates architecto fugit quos excepturi dicta neque dolorum error reiciendis est enim fuga voluptatibus numquam? Debitis incidunt fugit explicabo, autem corrupti aperiam numquam, tempora quisquam neque, odio illo et quo! Eos quidem, sapiente culpa temporibus quis autem voluptatem natus quos animi atque reiciendis ipsam similique nisi sint voluptates vitae repudiandae adipisci ratione labore eligendi neque fuga illum! Assumenda maxime aliquid adipisci totam numquam quisquam. Ullam blanditiis odio maiores officia pariatur, minima quidem ipsam numquam labore, doloribus quia eum architecto vitae saepe at, suscipit sapiente ab soluta recusandae dolore. Fugit, eos! Sed tenetur animi earum perferendis alias illum, in ea optio veniam excepturi. Optio, voluptatem accusantium ullam ab laboriosam dolorem, debitis nihil non porro, quod commodi totam est possimus blanditiis maxime obcaecati! Impedit officiis at alias, reprehenderit, nihil necessitatibus dolorum vitae vel qui ipsum voluptatibus! Aut dolor dicta repellendus eum quia eaque, facilis voluptatibus earum odit architecto assumenda recusandae nostrum qui quas natus dolore itaque sint doloremque. Delectus doloribus pariatur temporibus velit vitae laudantium nam sed excepturi repellendus similique, consequuntur doloremque deleniti dolorum atque laborum possimus eligendi a ducimus dolorem adipisci quisquam nihil, quidem animi! Iure maxime est ipsum ex atque eligendi voluptates in quidem ipsa facilis? Culpa optio illum, quidem fugiat corrupti voluptates rerum esse dolorem est, cumque reiciendis sed vel rem inventore voluptatum. Nam quaerat quia molestiae maiores rerum non nihil cum sunt tempora impedit doloribus fugiat magnam aut adipisci porro quam, iusto sit autem omnis labore iure ad incidunt? Earum tempore minima repudiandae. At modi repellendus consectetur voluptatum quidem error beatae voluptate blanditiis soluta fuga nisi culpa ullam molestias similique placeat, rem cum nam vel veritatis perferendis earum incidunt maxime, maiores numquam. Asperiores commodi maxime facere laboriosam maiores, assumenda alias, dolorem, atque magni adipisci illo doloremque rerum beatae. Cupiditate saepe voluptates est. Eos nam commodi incidunt qui ut alias molestias pariatur nemo. Dolorum saepe officia perspiciatis temporibus quam consectetur provident iure. Assumenda numquam eius nulla exercitationem sapiente quisquam ex molestias consequatur omnis, quas blanditiis distinctio, similique, suscipit mollitia pariatur illum deserunt quasi dolore repellat. Quos ducimus voluptas, odio sunt magni similique fuga excepturi, tenetur quam deserunt cupiditate cumque quas expedita. Aspernatur saepe tempore dolorum minima porro maxime illum? A eos consequatur vitae nam sapiente ipsa quos dolor. Magnam voluptatum odio iste at animi harum perferendis magni, quia ipsum illo quidem esse dicta sequi quas non saepe aliquid pariatur beatae ducimus inventore nam possimus distinctio. Eligendi eius rem nulla sequi officia exercitationem reprehenderit! Quo perferendis accusamus veritatis ipsam impedit natus sit maiores, rerum nobis consequuntur exercitationem asperiores vitae maxime? Nisi, iusto tempora ut ducimus optio neque repellat repudiandae officia animi, magnam velit voluptatem quas necessitatibus similique veritatis nulla molestias tenetur porro placeat? Magni cumque ipsam distinctio velit earum ipsa quas iusto quo ad accusantium praesentium similique, doloribus, deleniti vitae dolor voluptatibus non maiores excepturi sit nulla minima repellendus eligendi. Aperiam quia libero ea nihil quaerat laudantium culpa nesciunt voluptas provident quae, possimus quas enim, ab assumenda a repudiandae maxime? Aspernatur rem perferendis aliquam ut aperiam dolor illo saepe at vitae consequuntur sequi iste esse dolorem ducimus deserunt, alias ad libero tempore. Minima sit aperiam, eaque possimus natus ullam a delectus ut numquam, tenetur tempore distinctio ipsum dolore rem sapiente dolor temporibus consequuntur. Dolor vero molestiae, perferendis necessitatibus aut deleniti qui laboriosam autem ipsa, magnam amet quas minus eveniet. Quibusdam voluptatum nesciunt animi numquam! Velit, voluptas? Totam iusto, cupiditate officia commodi dolore laudantium quod error, cumque ipsam repellendus ratione eveniet similique quaerat quasi, necessitatibus quae eligendi ea quidem tempora. Explicabo, dolores distinctio aliquam perspiciatis ipsa eos eum fugit voluptatum omnis ipsam! Dolore architecto vitae alias laborum accusantium voluptate officia repellat molestiae nihil est laboriosam id consequuntur, eum magni voluptas hic iusto modi veniam quibusdam libero sequi? Expedita id excepturi rem eaque cupiditate ducimus nulla fuga commodi, vitae voluptatum inventore corrupti similique esse. Omnis, repellendus neque culpa voluptates, beatae tenetur fuga id mollitia harum quod, consequatur eaque ullam ipsum dignissimos? Harum vero neque placeat voluptate molestiae minima quod magni laboriosam commodi reiciendis, repellat eaque hic ex reprehenderit nam quidem doloribus non eos corrupti totam ipsum, iure explicabo.
+
+        </section>
+    
+    </div>
 
 
 
-    <footer class="container p-0 mt-5">
+    <footer class="container p-0 d-flex justify-content-center mt-3 ">
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 d-flex justify-content-center  ">
 
-            <div class="alert row text-center">
+            <div class="row text-center d-flex justify-content-center">
 
-                <div class="col-4 m-1">
+                <div class="col-sm-3 col-md-3 .col-lg-3 .col-xl-3">
 
                     <div class="row">
                         <h6><img class="col" src="image/payments.PNG" alt="Visa etc"></h6>
                     </div>
 
                     <div class="row">
-                        <h6 class="col">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et ratione magni natus
-                            harum debitis non veniam consequatur iusto aliquid aperiam pariatur, inventore at in tempora
-                            odio dolorum quia ad doloribus?</h6>
+                        <h6 class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestiae
+                            perferendis, reiciendis quas possimus aspernatur.</h6>
 
                     </div>
 
                 </div>
 
-                <div class="col-4 m-1">
-
-                    <div class="row">
+                <div class="col-sm-6 .col-md-7 .col-lg-7 .col-xl-7 d-flex justify-content-center">
 
 
-                        <div class=" col-10">
+
+                    <div class="row d-flex justify-content-center">
+
+                        <div class=" ">
                             <a href="#" class="nav-link">Новости</a>
                         </div>
 
-                        <div class=" col-10">
+                        <div class="">
                             <a href="#" class="nav-link">Заказ</a>
                         </div>
 
-                        <div class=" col-10">
+                        <div class="">
                             <a href="#" class="nav-link">Гарантия</a>
                         </div>
 
-                        <div class=" col-10">
+                        <div class=" ">
                             <a href="#" class="nav-link">Контакты</a>
                         </div>
 
-                    </div>
-
-                    <div class="row">
-                        <div class=" col-10">
+                        <div class="">
                             <a href="#" class="nav-link">Атомайзеры</a>
                         </div>
 
-                        <div class=" col-10">
+                        <div class="">
                             <a href="#" class="nav-link">Вейпы</a>
                         </div>
 
-                        <div class=" col-10">
+                        <div class=" ">
                             <a href="#" class="nav-link">Жидкости</a>
                         </div>
 
 
-                        <div class=" col-10">
+                        <div class="">
                             <a href="#" class="nav-link">Запчасти</a>
                         </div>
 
+
                     </div>
+
 
 
 
                 </div>
 
+                <div class="col-sm-2 col-md-2 .col-lg-2 .col-xl-2">
 
-                <div class="col-3 m-1 ml-3 mr-1">
-                    <div class="row">
+                    <div class="row d-flex justify-content-center">
 
-                        <div class="col-1 pr-0">
-                            <img src="image/telephone.PNG" alt="Call me us">
-                        </div>
-
-                        <div class="col-11  p-0">
-
-                            <div class="row">
-                                <h6 class="col">9 (999) 999-99-99</h6>
-                            </div>
-
-                            <div class="row">
-                                <h6 class="col">9 (999) 999-99-99</h6>
-                            </div>
-
-
-                        </div>
+                        <img src="image/telephone.PNG" alt="Call me us">
                     </div>
 
-                    
+                    <div class="row">
+                        <h6 class="col">9 (999) 999-99-99</h6>
+                    </div>
+
+                    <div class="row">
+                        <h6 class="col">9 (999) 999-99-99</h6>
+                    </div>
+
+
+
+
+
+
                 </div>
 
 
@@ -349,9 +366,7 @@
 
 
 
-    <!-- <span id="copyright" class="left">Все права защищены &copy; 2019 </span> 
- <img src="VK.png" alt="Группа ВК"> 
--->
+
 
 </body>
 

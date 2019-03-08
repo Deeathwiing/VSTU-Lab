@@ -24,8 +24,12 @@ footer {
     height: 10%;
 }
 
+aside {
+    width: 30%;
+    height: 100%;
+}
 .navbar-brand img{
-width: 30%;
+width: 35%;
 }
 
 #NewItems {
@@ -33,16 +37,16 @@ width: 30%;
 }
 
 
-
-header, .navbar {
-    width: 100%;
-}
-
-#signIn, #signUp {
+#Search {
+    width: 300px;
     
 }
 
 
+
+ section  {
+    border: 2px solid silver;
+}
 
 
 
