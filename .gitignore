@@ -63,3 +63,4 @@ $RECYCLE.BIN/
 
 # End of https://www.gitignore.io/api/osx,jekyll,windows
 .vscode/settings.json
+tools/pixie.exe
