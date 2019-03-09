@@ -1,373 +1,611 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <!--Reset css -->
-    <link rel="stylesheet" href="css/reset.css">
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script defer="defer" src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
-    <script defer="defer" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-        crossorigin="anonymous"></script>
-    <script defer="defer" src="bootstrap/js/bootstrap.min.js"></script>
-    <script defer="defer" src="js/javascript.js"></script>
-    <!-- Required meta tags -->
-
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="author" content="Deathwing">
-    <meta name="keywords"
-        content="site,shop,item,items,eshop,eng,ru,e-cig,vape,cloud,vape cloud,vape shop,kangertech,wismec,predator 228,iStick,pico,W,monster vape,liquids,om vape,om shop,om vape,aroma,mech mod,drag,deag 2,site,website,пар,вейп,мех мод,жидкости,электронные сигареты,пар,облака пара,дрэг,дрэг 2">
+    <link rel="stylesheet" href="css/reset.css" />
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/animations.css">
-    <link href="image/icon.png" rel="shortcut icon" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+    <link href="image/icon.png" rel="shortcut icon" type="image/x-icon" />
 
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      defer="defer"
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      defer="defer"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script defer="defer" src="bootstrap/js/bootstrap.min.js"></script>
+    <script defer="defer" src="js/ScreenSizeAdaptivity.js"></script>
+    <script defer="defer" src="js/Registration.js"></script>
+
+    <!-- Required meta tags -->
+
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="author" content="Deathwing" />
+    <meta
+      name="keywords"
+      content="site,shop,item,items,eshop,eng,ru,e-cig,vape,cloud,vape cloud,vape shop,kangertech,wismec,predator 228,iStick,pico,W,monster vape,liquids,om vape,om shop,om vape,aroma,mech mod,drag,deag 2,site,website,пар,вейп,мех мод,жидкости,электронные сигареты,пар,облака пара,дрэг,дрэг 2"
+    />
 
     <title>Vape Shop</title>
+  </head>
 
-</head>
-
-<body>
-
+  <body>
     <header class="container my-3  p-0">
-
-        <div class="row m-0 ">
-            <div class="carousel slide pl-0 order-first col" data-ride="carousel" id="slides">
-
-
-                <div class="carousel-inner">
-
-                    <div class="carousel-item active ">
-                        <a href="#"> <img class="d-block w-100" src="image/slide1.jpg" alt="blu-15BYN"></a>
-                    </div>
-
-                    <div class="carousel-item ">
-                        <a href="#"> <img class="d-block w-100" src="image/slide2.jpg"
-                                alt="30% CashBack for Happy Birthday"></a>
-                    </div>
-
-                    <a class="carousel-control-prev" href="#slides" role="button" data-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                    <a class="carousel-control-next" href="#slides" role="button" data-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                </div>
-
-
-
+      <div class="row m-0 ">
+        <div
+          class="carousel slide pl-0 order-first col"
+          data-ride="carousel"
+          id="slides"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active ">
+              <a href="#">
+                <img
+                  class="d-block w-100"
+                  src="image/slide1.jpg"
+                  alt="blu-15BYN"
+              /></a>
             </div>
 
-            <div class="image-right col p-0">
-                <a href="#"><img class="d-block w-100" src="image/slide2.jpg" alt="30% CashBack for Happy Birthday"></a>
+            <div class="carousel-item ">
+              <a href="#">
+                <img
+                  class="d-block w-100"
+                  src="image/slide2.jpg"
+                  alt="30% CashBack for Happy Birthday"
+              /></a>
             </div>
 
+            <a
+              class="carousel-control-prev"
+              href="#slides"
+              role="button"
+              data-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a
+              class="carousel-control-next"
+              href="#slides"
+              role="button"
+              data-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
         </div>
 
+        <div class="image-right col p-0">
+          <a href="#"
+            ><img
+              class="d-block w-100"
+              src="image/slide2.jpg"
+              alt="30% CashBack for Happy Birthday"
+          /></a>
+        </div>
+      </div>
     </header>
-
-
-
-
 
     <header class="container mb-3 ">
+      <nav class="navbar row  navbar-expand-md navbar-light bg-light shadow ">
+        <div class=" col m-1 mr-4 ">
+          <a href="#" class="navbar-brand "
+            ><img id="object" class="" src="image/icon.png" alt="OM" /><span
+              id="textLogo"
+              class="ml-3"
+              >Vape Shop</span
+            ></a
+          >
+        </div>
 
+        <button
+          class="navbar-toggler mr-1"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
+        <div class="collapse navbar-collapse  col " id="navbarResponsive">
+          <ul class="navbar-nav row d-flex justify-content-around  ">
 
-        <nav class="navbar row  navbar-expand-md navbar-light bg-light shadow ">
+            <li class="nav-item hidden d-none PersonalArea">
+                    <a
+                    href=""
+                    class="nav-link font-weight-bold "
+                    role="button"
+                    >Личный кабинет</a
+                  >
+            </li>
 
-
-
-            <div class=" col m-1 mr-4 "> <a href="#" class="navbar-brand "><img id="object" class="" src="image/icon.png"
-                        alt="OM"><span id="textLogo" class="ml-3">Vape Shop</span></a> 
+            <li class="nav-item dropdown removeAfterReg">
+              <a
+                href="#"
+                id="signIn"
+                class="nav-link font-weight-bold "
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Вход</a
+              >
+              <div
+                class="dropdown-menu  bg-light"
+                aria-labelledby="navbarDropdown"
+              >
+                <form class="px-4 py-3">
+                  <div class="form-group">
+                    <label for="exampleDropdownFormEmail1">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleDropdownFormEmail1"
+                      placeholder="email@example.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleDropdownFormPassword1">Пароль</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="exampleDropdownFormPassword1"
+                      placeholder="Пароль"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="dropdownCheck"
+                      />
+                      <label class="form-check-label" for="dropdownCheck">
+                        Запомнить меня
+                      </label>
                     </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">Войти</button>
+                </form>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#"
+                  >Впервые здесь ? Регистрация !</a
+                >
+                <a class="dropdown-item" href="#">Забыли пароль ?</a>
+              </div>
+            </li>
 
+            <li class="nav-item dropdown removeAfterReg">
+              <a
+                href="#"
+                id="signIn"
+                class="nav-link font-weight-bold "
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                >Регистрация</a
+              >
+              <div
+                class="dropdown-menu  bg-light"
+                id="Reg"
+                aria-labelledby="navbarDropdown"
+              >
+                <form class="px-4 py-3  ">
+                  <div class="form-group">
+                    <label for="exampleDropdownFormEmail1">Email</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="regEmail"
+                      placeholder="email@example.com"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="inputAddress">Имя</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="regFirstName"
+                      placeholder="Иван"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="inputAddress2">Фамилия</label>
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="regLastName"
+                      placeholder="Иванов"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <label for="exampleDropdownFormPassword1">Пароль</label>
+                    <input
+                      type="password"
+                      class="form-control"
+                      id="regPassword"
+                      placeholder="Пароль"
+                    />
+                  </div>
+                  <div class="form-group">
+                    <div class="form-check">
+                      <input
+                        type="checkbox"
+                        class="form-check-input"
+                        id="dropdownCheck"
+                      />
+                      <label class="form-check-label" for="dropdownCheck">
+                        Запомнить меня
+                      </label>
+                    </div>
+                  </div>
+                  <button
+                    type="submit"
+                    class="btn btn-primary "
+                    id="RegistrationBtn"
+                  >
+                    Регистрация
+                  </button>
+                </form>
+              </div>
+            </li>
 
+            <li class="nav-item dropdown ">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                href="#"
+                >Каталог</a
+              >
 
-            <button class="navbar-toggler mr-1" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Контакты</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Атомайзеры</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Электронные парогенераторы</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Жидкость</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Запчасти и комплектующие</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Все для самозамеса</a>
+              </div>
+            </li>
 
-                <span class="navbar-toggler-icon"></span>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Новости и предложения</a>
+            </li>
 
-            </button>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Заказ</a>
+            </li>
 
+            <li class="nav-item">
+              <a href="#" class="nav-link">Гарантия</a>
+            </li>
 
+            <li class="nav-item">
+              <a href="#" class="nav-link"
+                ><span id="NewItems">Новинки и акции!</span></a
+              >
+            </li>
 
-            <div class="collapse navbar-collapse  col " id="navbarResponsive">
-
-                <ul class="navbar-nav row d-flex justify-content-around  ">
-
-                    <li class="nav-item">
-                        <a href="#" id="signIn" class="nav-link font-weight-bold ">Вход</a>
-                    </li>
-
-
-                    <li class="nav-item">
-                        <a href="#" id="signUp" class="nav-link font-weight-bold">Регистрация</a>
-                    </li>
-
-
-
-
-
-
-                    <li class="nav-item dropdown ">
-                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
-                            aria-haspopup="true" aria-expanded="false" href="#">Каталог</a>
-
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-                            <a class="dropdown-item" href="#">Контакты</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Атомайзеры</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Электронные парогенераторы</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Жидкость</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Запчасти и комплектующие</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="#">Все для самозамеса</a>
-                        </div>
-
-                    </li>
-
-
-
-
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Новости и предложения</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Заказ</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#" class="nav-link">Гарантия</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a href="#" class="nav-link"><span id="NewItems">Новинки и акции!</span></a>
-                    </li>
-
-
-                    <li class="nav-item ml-2 ">
-                        <form class="form-inline  py-1 ">
-                            <input class="form-control mr-sm-2  shadow-lg  " id="Search" type="search"
-                                placeholder="Поиск" aria-label="Search">
-                            <button class="btn btn-outline-secondary  my-2 my-sm-0 text-dark bg-light"
-                                type="submit">Поиск</button>
-                        </form>
-                    </li>
-
-                </ul>
-
-            </div>
-
-
-
-        </nav>
-
-
+            <li class="nav-item ml-2 ">
+              <form class="form-inline  py-1 ">
+                <input
+                  class="form-control mr-sm-2  shadow-lg  "
+                  id="Search"
+                  type="search"
+                  placeholder="Поиск"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-outline-secondary  my-2 my-sm-0 text-dark bg-light"
+                  type="submit"
+                >
+                  Поиск
+                </button>
+              </form>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
 
+    <div class="container p-0 d-flex flex-row">
+      <aside class="d-flex flex-column m-1 col p-0 sticky-top" id="deleteAside">
+        <nav class="nav flex-column navbar-light bg-light shadow  ">
+          <ul class="navbar-nav p-4 ">
+            <li class="nav-item col">
+              <a href="#" class="nav-link font-weight-bold ">Главная</a>
+            </li>
 
-    
+            <li class="nav-item dropdown col">
+              <a
+                class="nav-link dropdown-toggle"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+                href="#"
+                >Каталог</a
+              >
 
-<div class="container p-0 d-flex flex-row"> 
-         
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Контакты</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Атомайзеры</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Электронные парогенераторы</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Жидкость</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Запчасти и комплектующие</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Все для самозамеса</a>
+              </div>
+            </li>
+            <li class="nav-item col">
+              <a href="#" class="nav-link">Новости и предложения</a>
+            </li>
 
-        <aside class="d-flex flex-column m-1 col p-0 sticky-top" id="deleteAside">
+            <li class="nav-item col">
+              <a href="#" class="nav-link">Заказ</a>
+            </li>
 
-                <nav class="nav flex-column navbar-light bg-light shadow  ">
-                        <ul class="navbar-nav p-4 ">
+            <li class="nav-item col">
+              <a href="#" class="nav-link">Гарантия</a>
+            </li>
 
+            <li class="nav-item col">
+              <a href="#" class="nav-link"
+                ><span id="NewItems">Новинки и акции!</span></a
+              >
+            </li>
 
-                                <li class="nav-item col">
-                                        <a href="#"  class="nav-link font-weight-bold ">Главная</a>
-                                    </li>
+            <li class="nav-item ml-1 row">
+              <form class="form-inline  py-1 ">
+                <input
+                  class="form-control mr-sm-2  shadow-lg  "
+                  id="asideSearch"
+                  type="search"
+                  placeholder="Поиск"
+                  aria-label="Search"
+                />
+                <button
+                  class="btn btn-outline-secondary  my-2 my-sm-0 text-dark bg-light"
+                  type="submit"
+                  id="asideSearchBtn"
+                >
+                  Поиск
+                </button>
+              </form>
+            </li>
+          </ul>
+        </nav>
+      </aside>
 
-                                <li class="nav-item col">
-                                    <a href="#" id="signIn" class="nav-link font-weight-bold ">Вход</a>
-                                </li>
-            
-            
-                                <li class="nav-item col">
-                                    <a href="#" id="signUp" class="nav-link font-weight-bold">Регистрация</a>
-                                </li>
-      
-                                <li class="nav-item dropdown col">
-                                    <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
-                                        aria-haspopup="true" aria-expanded="false" href="#">Каталог</a>
-            
-                                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-            
-                                        <a class="dropdown-item" href="#">Контакты</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Атомайзеры</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Электронные парогенераторы</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Жидкость</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Запчасти и комплектующие</a>
-                                        <div class="dropdown-divider"></div>
-                                        <a class="dropdown-item" href="#">Все для самозамеса</a>
-                                    </div>
-            
-                                </li>
-                                <li class="nav-item col">
-                                    <a href="#" class="nav-link">Новости и предложения</a>
-                                </li>
-            
-                                <li class="nav-item col">
-                                    <a href="#" class="nav-link">Заказ</a>
-                                </li>
-            
-                                <li class="nav-item col">
-                                    <a href="#" class="nav-link">Гарантия</a>
-                                </li>
-            
-                                <li class="nav-item col">
-                                    <a href="#" class="nav-link"><span id="NewItems">Новинки и акции!</span></a>
-                                </li>
-            
-            
-                                <li class="nav-item ml-1 row">
-                                    <form class="form-inline  py-1 ">
-                                        <input class="form-control mr-sm-2  shadow-lg  " id="asideSearch" type="search"
-                                            placeholder="Поиск" aria-label="Search">
-                                        <button class="btn btn-outline-secondary  my-2 my-sm-0 text-dark bg-light"
-                                            type="submit" id="asideSearchBtn">Поиск</button>
-                                    </form>
-                                </li>
-            
-                            </ul>
-                      </nav>
-
-        </aside>
-
-        <section class="d-flex flex-column m-1 p-2" id="section">
-Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nemo! Alias optio a, sint tempore dolorum dignissimos blanditiis, non illo eos officia accusamus iusto, amet mollitia autem reiciendis distinctio corporis consequuntur! Officia facilis error odio deleniti accusantium veritatis eligendi? Blanditiis laboriosam quas ullam et obcaecati, adipisci ab, minus accusantium assumenda deleniti quos illo temporibus sunt. Unde pariatur soluta asperiores, maxime ullam dolores, esse vitae quibusdam eum est deleniti totam accusamus voluptatibus officia facere. Optio, nostrum dignissimos! At omnis voluptatibus excepturi repellendus mollitia fugiat aliquam voluptas corporis quo dicta esse rerum ab ea, asperiores non velit dolores numquam vel a, hic consequatur nesciunt beatae distinctio? Distinctio quam saepe harum qui adipisci officia repellat veniam nam repellendus at commodi, eius sapiente nesciunt vitae, accusantium ea error. Non, velit eaque quia odio, iusto doloribus eligendi reprehenderit exercitationem esse facere amet officiis? Illum molestiae nulla corporis quod pariatur commodi magnam qui ratione minus ipsum sapiente natus temporibus quas labore mollitia expedita, perferendis fugit aspernatur delectus quaerat obcaecati repellendus. Atque quas voluptatem dolore nemo tempora suscipit similique rerum doloribus qui, repellat magni aut iste necessitatibus consequuntur, velit fuga consequatur beatae possimus! Reiciendis eveniet perferendis ipsam atque, sed consequuntur, possimus nobis eos exercitationem assumenda doloremque. Nobis odio laudantium a illo molestias cum magni laborum dolorem eveniet. Consectetur mollitia laboriosam cupiditate ducimus eum ratione iusto! Voluptate praesentium in laborum dignissimos iure, cupiditate accusantium odio pariatur quas omnis cumque explicabo porro fuga error quibusdam nesciunt perferendis quae labore. Quam incidunt a dignissimos deleniti natus, explicabo ducimus id excepturi voluptates, accusamus officiis quo est. Iusto eveniet dolorum rem quo illum facilis dignissimos quos quisquam. Neque ullam aliquam quam optio doloribus earum recusandae impedit? Ad voluptatum assumenda cumque magnam eos porro? Voluptate, exercitationem reprehenderit. Perferendis saepe odit tempore amet minus ipsum quasi fugit, nihil suscipit doloribus ipsa voluptas exercitationem omnis assumenda consequatur facilis in reprehenderit, nesciunt illo voluptatum nam corporis recusandae. Corporis similique, nisi animi molestias quisquam assumenda ipsam odit, earum temporibus voluptatum quas voluptates architecto fugit quos excepturi dicta neque dolorum error reiciendis est enim fuga voluptatibus numquam? Debitis incidunt fugit explicabo, autem corrupti aperiam numquam, tempora quisquam neque, odio illo et quo! Eos quidem, sapiente culpa temporibus quis autem voluptatem natus quos animi atque reiciendis ipsam similique nisi sint voluptates vitae repudiandae adipisci ratione labore eligendi neque fuga illum! Assumenda maxime aliquid adipisci totam numquam quisquam. Ullam blanditiis odio maiores officia pariatur, minima quidem ipsam numquam labore, doloribus quia eum architecto vitae saepe at, suscipit sapiente ab soluta recusandae dolore. Fugit, eos! Sed tenetur animi earum perferendis alias illum, in ea optio veniam excepturi. Optio, voluptatem accusantium ullam ab laboriosam dolorem, debitis nihil non porro, quod commodi totam est possimus blanditiis maxime obcaecati! Impedit officiis at alias, reprehenderit, nihil necessitatibus dolorum vitae vel qui ipsum voluptatibus! Aut dolor dicta repellendus eum quia eaque, facilis voluptatibus earum odit architecto assumenda recusandae nostrum qui quas natus dolore itaque sint doloremque. Delectus doloribus pariatur temporibus velit vitae laudantium nam sed excepturi repellendus similique, consequuntur doloremque deleniti dolorum atque laborum possimus eligendi a ducimus dolorem adipisci quisquam nihil, quidem animi! Iure maxime est ipsum ex atque eligendi voluptates in quidem ipsa facilis? Culpa optio illum, quidem fugiat corrupti voluptates rerum esse dolorem est, cumque reiciendis sed vel rem inventore voluptatum. Nam quaerat quia molestiae maiores rerum non nihil cum sunt tempora impedit doloribus fugiat magnam aut adipisci porro quam, iusto sit autem omnis labore iure ad incidunt? Earum tempore minima repudiandae. At modi repellendus consectetur voluptatum quidem error beatae voluptate blanditiis soluta fuga nisi culpa ullam molestias similique placeat, rem cum nam vel veritatis perferendis earum incidunt maxime, maiores numquam. Asperiores commodi maxime facere laboriosam maiores, assumenda alias, dolorem, atque magni adipisci illo doloremque rerum beatae. Cupiditate saepe voluptates est. Eos nam commodi incidunt qui ut alias molestias pariatur nemo. Dolorum saepe officia perspiciatis temporibus quam consectetur provident iure. Assumenda numquam eius nulla exercitationem sapiente quisquam ex molestias consequatur omnis, quas blanditiis distinctio, similique, suscipit mollitia pariatur illum deserunt quasi dolore repellat. Quos ducimus voluptas, odio sunt magni similique fuga excepturi, tenetur quam deserunt cupiditate cumque quas expedita. Aspernatur saepe tempore dolorum minima porro maxime illum? A eos consequatur vitae nam sapiente ipsa quos dolor. Magnam voluptatum odio iste at animi harum perferendis magni, quia ipsum illo quidem esse dicta sequi quas non saepe aliquid pariatur beatae ducimus inventore nam possimus distinctio. Eligendi eius rem nulla sequi officia exercitationem reprehenderit! Quo perferendis accusamus veritatis ipsam impedit natus sit maiores, rerum nobis consequuntur exercitationem asperiores vitae maxime? Nisi, iusto tempora ut ducimus optio neque repellat repudiandae officia animi, magnam velit voluptatem quas necessitatibus similique veritatis nulla molestias tenetur porro placeat? Magni cumque ipsam distinctio velit earum ipsa quas iusto quo ad accusantium praesentium similique, doloribus, deleniti vitae dolor voluptatibus non maiores excepturi sit nulla minima repellendus eligendi. Aperiam quia libero ea nihil quaerat laudantium culpa nesciunt voluptas provident quae, possimus quas enim, ab assumenda a repudiandae maxime? Aspernatur rem perferendis aliquam ut aperiam dolor illo saepe at vitae consequuntur sequi iste esse dolorem ducimus deserunt, alias ad libero tempore. Minima sit aperiam, eaque possimus natus ullam a delectus ut numquam, tenetur tempore distinctio ipsum dolore rem sapiente dolor temporibus consequuntur. Dolor vero molestiae, perferendis necessitatibus aut deleniti qui laboriosam autem ipsa, magnam amet quas minus eveniet. Quibusdam voluptatum nesciunt animi numquam! Velit, voluptas? Totam iusto, cupiditate officia commodi dolore laudantium quod error, cumque ipsam repellendus ratione eveniet similique quaerat quasi, necessitatibus quae eligendi ea quidem tempora. Explicabo, dolores distinctio aliquam perspiciatis ipsa eos eum fugit voluptatum omnis ipsam! Dolore architecto vitae alias laborum accusantium voluptate officia repellat molestiae nihil est laboriosam id consequuntur, eum magni voluptas hic iusto modi veniam quibusdam libero sequi? Expedita id excepturi rem eaque cupiditate ducimus nulla fuga commodi, vitae voluptatum inventore corrupti similique esse. Omnis, repellendus neque culpa voluptates, beatae tenetur fuga id mollitia harum quod, consequatur eaque ullam ipsum dignissimos? Harum vero neque placeat voluptate molestiae minima quod magni laboriosam commodi reiciendis, repellat eaque hic ex reprehenderit nam quidem doloribus non eos corrupti totam ipsum, iure explicabo.
-
-        </section>
-    
+      <section class="d-flex flex-column m-1 p-2" id="section">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, nemo!
+        Alias optio a, sint tempore dolorum dignissimos blanditiis, non illo eos
+        officia accusamus iusto, amet mollitia autem reiciendis distinctio
+        corporis consequuntur! Officia facilis error odio deleniti accusantium
+        veritatis eligendi? Blanditiis laboriosam quas ullam et obcaecati,
+        adipisci ab, minus accusantium assumenda deleniti quos illo temporibus
+        sunt. Unde pariatur soluta asperiores, maxime ullam dolores, esse vitae
+        quibusdam eum est deleniti totam accusamus voluptatibus officia facere.
+        Optio, nostrum dignissimos! At omnis voluptatibus excepturi repellendus
+        mollitia fugiat aliquam voluptas corporis quo dicta esse rerum ab ea,
+        asperiores non velit dolores numquam vel a, hic consequatur nesciunt
+        beatae distinctio? Distinctio quam saepe harum qui adipisci officia
+        repellat veniam nam repellendus at commodi, eius sapiente nesciunt
+        vitae, accusantium ea error. Non, velit eaque quia odio, iusto doloribus
+        eligendi reprehenderit exercitationem esse facere amet officiis? Illum
+        molestiae nulla corporis quod pariatur commodi magnam qui ratione minus
+        ipsum sapiente natus temporibus quas labore mollitia expedita,
+        perferendis fugit aspernatur delectus quaerat obcaecati repellendus.
+        Atque quas voluptatem dolore nemo tempora suscipit similique rerum
+        doloribus qui, repellat magni aut iste necessitatibus consequuntur,
+        velit fuga consequatur beatae possimus! Reiciendis eveniet perferendis
+        ipsam atque, sed consequuntur, possimus nobis eos exercitationem
+        assumenda doloremque. Nobis odio laudantium a illo molestias cum magni
+        laborum dolorem eveniet. Consectetur mollitia laboriosam cupiditate
+        ducimus eum ratione iusto! Voluptate praesentium in laborum dignissimos
+        iure, cupiditate accusantium odio pariatur quas omnis cumque explicabo
+        porro fuga error quibusdam nesciunt perferendis quae labore. Quam
+        incidunt a dignissimos deleniti natus, explicabo ducimus id excepturi
+        voluptates, accusamus officiis quo est. Iusto eveniet dolorum rem quo
+        illum facilis dignissimos quos quisquam. Neque ullam aliquam quam optio
+        doloribus earum recusandae impedit? Ad voluptatum assumenda cumque
+        magnam eos porro? Voluptate, exercitationem reprehenderit. Perferendis
+        saepe odit tempore amet minus ipsum quasi fugit, nihil suscipit
+        doloribus ipsa voluptas exercitationem omnis assumenda consequatur
+        facilis in reprehenderit, nesciunt illo voluptatum nam corporis
+        recusandae. Corporis similique, nisi animi molestias quisquam assumenda
+        ipsam odit, earum temporibus voluptatum quas voluptates architecto fugit
+        quos excepturi dicta neque dolorum error reiciendis est enim fuga
+        voluptatibus numquam? Debitis incidunt fugit explicabo, autem corrupti
+        aperiam numquam, tempora quisquam neque, odio illo et quo! Eos quidem,
+        sapiente culpa temporibus quis autem voluptatem natus quos animi atque
+        reiciendis ipsam similique nisi sint voluptates vitae repudiandae
+        adipisci ratione labore eligendi neque fuga illum! Assumenda maxime
+        aliquid adipisci totam numquam quisquam. Ullam blanditiis odio maiores
+        officia pariatur, minima quidem ipsam numquam labore, doloribus quia eum
+        architecto vitae saepe at, suscipit sapiente ab soluta recusandae
+        dolore. Fugit, eos! Sed tenetur animi earum perferendis alias illum, in
+        ea optio veniam excepturi. Optio, voluptatem accusantium ullam ab
+        laboriosam dolorem, debitis nihil non porro, quod commodi totam est
+        possimus blanditiis maxime obcaecati! Impedit officiis at alias,
+        reprehenderit, nihil necessitatibus dolorum vitae vel qui ipsum
+        voluptatibus! Aut dolor dicta repellendus eum quia eaque, facilis
+        voluptatibus earum odit architecto assumenda recusandae nostrum qui quas
+        natus dolore itaque sint doloremque. Delectus doloribus pariatur
+        temporibus velit vitae laudantium nam sed excepturi repellendus
+        similique, consequuntur doloremque deleniti dolorum atque laborum
+        possimus eligendi a ducimus dolorem adipisci quisquam nihil, quidem
+        animi! Iure maxime est ipsum ex atque eligendi voluptates in quidem ipsa
+        facilis? Culpa optio illum, quidem fugiat corrupti voluptates rerum esse
+        dolorem est, cumque reiciendis sed vel rem inventore voluptatum. Nam
+        quaerat quia molestiae maiores rerum non nihil cum sunt tempora impedit
+        doloribus fugiat magnam aut adipisci porro quam, iusto sit autem omnis
+        labore iure ad incidunt? Earum tempore minima repudiandae. At modi
+        repellendus consectetur voluptatum quidem error beatae voluptate
+        blanditiis soluta fuga nisi culpa ullam molestias similique placeat, rem
+        cum nam vel veritatis perferendis earum incidunt maxime, maiores
+        numquam. Asperiores commodi maxime facere laboriosam maiores, assumenda
+        alias, dolorem, atque magni adipisci illo doloremque rerum beatae.
+        Cupiditate saepe voluptates est. Eos nam commodi incidunt qui ut alias
+        molestias pariatur nemo. Dolorum saepe officia perspiciatis temporibus
+        quam consectetur provident iure. Assumenda numquam eius nulla
+        exercitationem sapiente quisquam ex molestias consequatur omnis, quas
+        blanditiis distinctio, similique, suscipit mollitia pariatur illum
+        deserunt quasi dolore repellat. Quos ducimus voluptas, odio sunt magni
+        similique fuga excepturi, tenetur quam deserunt cupiditate cumque quas
+        expedita. Aspernatur saepe tempore dolorum minima porro maxime illum? A
+        eos consequatur vitae nam sapiente ipsa quos dolor. Magnam voluptatum
+        odio iste at animi harum perferendis magni, quia ipsum illo quidem esse
+        dicta sequi quas non saepe aliquid pariatur beatae ducimus inventore nam
+        possimus distinctio. Eligendi eius rem nulla sequi officia
+        exercitationem reprehenderit! Quo perferendis accusamus veritatis ipsam
+        impedit natus sit maiores, rerum nobis consequuntur exercitationem
+        asperiores vitae maxime? Nisi, iusto tempora ut ducimus optio neque
+        repellat repudiandae officia animi, magnam velit voluptatem quas
+        necessitatibus similique veritatis nulla molestias tenetur porro
+        placeat? Magni cumque ipsam distinctio velit earum ipsa quas iusto quo
+        ad accusantium praesentium similique, doloribus, deleniti vitae dolor
+        voluptatibus non maiores excepturi sit nulla minima repellendus
+        eligendi. Aperiam quia libero ea nihil quaerat laudantium culpa nesciunt
+        voluptas provident quae, possimus quas enim, ab assumenda a repudiandae
+        maxime? Aspernatur rem perferendis aliquam ut aperiam dolor illo saepe
+        at vitae consequuntur sequi iste esse dolorem ducimus deserunt, alias ad
+        libero tempore. Minima sit aperiam, eaque possimus natus ullam a
+        delectus ut numquam, tenetur tempore distinctio ipsum dolore rem
+        sapiente dolor temporibus consequuntur. Dolor vero molestiae,
+        perferendis necessitatibus aut deleniti qui laboriosam autem ipsa,
+        magnam amet quas minus eveniet. Quibusdam voluptatum nesciunt animi
+        numquam! Velit, voluptas? Totam iusto, cupiditate officia commodi dolore
+        laudantium quod error, cumque ipsam repellendus ratione eveniet
+        similique quaerat quasi, necessitatibus quae eligendi ea quidem tempora.
+        Explicabo, dolores distinctio aliquam perspiciatis ipsa eos eum fugit
+        voluptatum omnis ipsam! Dolore architecto vitae alias laborum
+        accusantium voluptate officia repellat molestiae nihil est laboriosam id
+        consequuntur, eum magni voluptas hic iusto modi veniam quibusdam libero
+        sequi? Expedita id excepturi rem eaque cupiditate ducimus nulla fuga
+        commodi, vitae voluptatum inventore corrupti similique esse. Omnis,
+        repellendus neque culpa voluptates, beatae tenetur fuga id mollitia
+        harum quod, consequatur eaque ullam ipsum dignissimos? Harum vero neque
+        placeat voluptate molestiae minima quod magni laboriosam commodi
+        reiciendis, repellat eaque hic ex reprehenderit nam quidem doloribus non
+        eos corrupti totam ipsum, iure explicabo.
+      </section>
     </div>
 
-
-
     <footer class="container p-0 d-flex justify-content-center mt-3 ">
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-light p-3 d-flex justify-content-center  ">
-
-            <div class="row text-center d-flex justify-content-center">
-
-                <div class="col-sm-3 col-md-3 .col-lg-3 .col-xl-3">
-
-                    <div class="row">
-                        <h6><img class="col" src="image/payments.PNG" alt="Visa etc"></h6>
-                    </div>
-
-                    <div class="row">
-                        <h6 class="col">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo molestiae
-                            perferendis, reiciendis quas possimus aspernatur.</h6>
-
-                    </div>
-
-                </div>
-
-                <div class="col-sm-6 .col-md-7 .col-lg-7 .col-xl-7 d-flex justify-content-center">
-
-
-
-                    <div class="row d-flex justify-content-center">
-
-                        <div class=" ">
-                            <a href="#" class="nav-link">Новости</a>
-                        </div>
-
-                        <div class="">
-                            <a href="#" class="nav-link">Заказ</a>
-                        </div>
-
-                        <div class="">
-                            <a href="#" class="nav-link">Гарантия</a>
-                        </div>
-
-                        <div class=" ">
-                            <a href="#" class="nav-link">Контакты</a>
-                        </div>
-
-                        <div class="">
-                            <a href="#" class="nav-link">Атомайзеры</a>
-                        </div>
-
-                        <div class="">
-                            <a href="#" class="nav-link">Вейпы</a>
-                        </div>
-
-                        <div class=" ">
-                            <a href="#" class="nav-link">Жидкости</a>
-                        </div>
-
-
-                        <div class="">
-                            <a href="#" class="nav-link">Запчасти</a>
-                        </div>
-
-
-                    </div>
-
-
-
-
-                </div>
-
-                <div class="col-sm-2 col-md-2 .col-lg-2 .col-xl-2">
-
-                    <div class="row d-flex justify-content-center">
-
-                        <img src="image/telephone.PNG" alt="Call me us">
-                    </div>
-
-                    <div class="row">
-                        <h6 class="col">9 (999) 999-99-99</h6>
-                    </div>
-
-                    <div class="row">
-                        <h6 class="col">9 (999) 999-99-99</h6>
-                    </div>
-
-
-
-
-
-
-                </div>
-
-
-
+      <nav
+        class="navbar navbar-expand-lg navbar-light bg-light p-3 d-flex justify-content-center  "
+      >
+        <div class="row text-center d-flex justify-content-center">
+          <div class="col-sm-3 col-md-3 .col-lg-3 .col-xl-3">
+            <div class="row">
+              <h6>
+                <img class="col" src="image/payments.PNG" alt="Visa etc" />
+              </h6>
             </div>
-        </nav>
+
+            <div class="row">
+              <h6 class="col">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                molestiae perferendis, reiciendis quas possimus aspernatur.
+              </h6>
+            </div>
+          </div>
+
+          <div
+            class="col-sm-6 .col-md-7 .col-lg-7 .col-xl-7 d-flex justify-content-center"
+          >
+            <div class="row d-flex justify-content-center">
+              <div class=" ">
+                <a href="#" class="nav-link">Новости</a>
+              </div>
+
+              <div class="">
+                <a href="#" class="nav-link">Заказ</a>
+              </div>
+
+              <div class="">
+                <a href="#" class="nav-link">Гарантия</a>
+              </div>
+
+              <div class=" ">
+                <a href="#" class="nav-link">Контакты</a>
+              </div>
+
+              <div class="">
+                <a href="#" class="nav-link">Атомайзеры</a>
+              </div>
+
+              <div class="">
+                <a href="#" class="nav-link">Вейпы</a>
+              </div>
+
+              <div class=" ">
+                <a href="#" class="nav-link">Жидкости</a>
+              </div>
+
+              <div class="">
+                <a href="#" class="nav-link">Запчасти</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-2 col-md-2 .col-lg-2 .col-xl-2">
+            <div class="row d-flex justify-content-center">
+              <img src="image/telephone.PNG" alt="Call me us" />
+            </div>
+
+            <div class="row">
+              <h6 class="col">9 (999) 999-99-99</h6>
+            </div>
+
+            <div class="row">
+              <h6 class="col">9 (999) 999-99-99</h6>
+            </div>
+          </div>
+        </div>
+      </nav>
     </footer>
-
-
-
-
-
-
-
-
-
-</body>
-
+  </body>
 </html>

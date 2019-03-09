@@ -50,4 +50,11 @@ width: 35%;
 
 
 
+.dropdown-menu.show{
 
+    z-index: 1000000000000000;
+}
+
+#Reg {
+    width: 400%;
+}
