@@ -19,6 +19,17 @@ class User {
 }
 
 let BDusers = [];
+let regEmail = $("#regEmail")
+  .val()
+  .toLowerCase();
+let regFirstName = $("#regFirstName")
+  .val()
+  .toLowerCase();
+let regLastName = $("#regLastName")
+  .val()
+  .toLowerCase();
+let regPassword = $("#regPassword").val();
+
 
 for (let i = 1; i <= localStorage.length; i++) {
   BDusers.push(JSON.parse(localStorage.getItem(i)));
@@ -33,9 +44,7 @@ $("#RegistrationBtn").on("click", function (event) {
     var user = BDusers[i];
 
     if (
-      $("#regEmail")
-      .val()
-      .toLowerCase() == user.email
+      regEmail == user.email
     ) {
       alert("Данный email занят");
       return;
@@ -43,29 +52,22 @@ $("#RegistrationBtn").on("click", function (event) {
   }
 
   if (
-    ($("#regFirstName").val() &&
-      $("#regLastName").val() &&
-      $("#regPassword").val()) == false
+    (regFirstName &&
+      regLastName &&
+      regPassword) == false
   ) {
     alert("Заполните все поля");
     return;
   }
-  var counter = localStorage.length;
+  let counter = localStorage.length;
   let id = ++counter;
 
-  let email = $("#regEmail")
-    .val()
-    .toLowerCase();
+  let email = regEmail;
+  let firstName = regFirstName;
+  let lastName = regLastName;
+  let password = regPassword;
 
-  let firstName = $("#regFirstName")
-    .val()
-    .toLowerCase();
-  let lastName = $("#regLastName")
-    .val()
-    .toLowerCase();
-  let password = $("#regPassword").val();
-
-  var newUser = new User(id, email, firstName, lastName, password);
+  let newUser = new User(id, email, firstName, lastName, password);
   localStorage.setItem(id, JSON.stringify(newUser));
   $("#Reg").hide();
 

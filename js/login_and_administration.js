@@ -1,6 +1,6 @@
-var usersBase = [];
-var checklogin = false;
-var admin = false;
+let usersBase = [];
+let checklogin = false;
+let admin = false;
 
 
 for (let i = 0; i <= localStorage.length; i++) {

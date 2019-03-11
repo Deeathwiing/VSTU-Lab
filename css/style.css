@@ -1,8 +1,7 @@
-
 * {
     font-family: 'Georgia', sans-serif;
     outline: none !important;
-   
+
 }
 
 
@@ -29,8 +28,9 @@ aside {
     width: 30%;
     height: 100%;
 }
-.navbar-brand img{
-width: 35%;
+
+.navbar-brand img {
+    width: 35%;
 }
 
 #NewItems {
@@ -40,18 +40,18 @@ width: 35%;
 
 #Search {
     width: 300px;
-    
+
 }
 
 
 
- section  {
+section {
     border: 2px solid silver;
 }
 
 
 
-.dropdown-menu.show{
+.dropdown-menu.show {
 
     z-index: 1000000000000000;
 }
