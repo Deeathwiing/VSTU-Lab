@@ -11,7 +11,7 @@ $("#login").on("click", function (event) {
 
     for (let i = 0; i < BDusers.length; i++) {
 
-        var users = BDusers[i];
+        let users = BDusers[i];
 
         if (($("#logEmail")
                 .val()
@@ -38,7 +38,7 @@ $("#login").on("click", function (event) {
 });
 
 for (let i = 1; i < usersBase.length; i++) {
-    var userId = usersBase[i];
+    let userId = usersBase[i];
 
 
 

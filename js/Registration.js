@@ -41,7 +41,7 @@ for (let i = 0; i < BDusers.length; i++) {
 
 $("#RegistrationBtn").on("click", function (event) {
   for (let i = 0; i < BDusers.length; i++) {
-    var user = BDusers[i];
+    let user = BDusers[i];
 
     if (
       regEmail == user.email
