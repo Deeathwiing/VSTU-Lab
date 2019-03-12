@@ -45,7 +45,7 @@ let password = $("#regPassword").val();
     let user = BDusers[i];
 
     if (
-      regEmail == user.email
+      email == user.email
     ) {
       alert("Данный email занят");
       return;
