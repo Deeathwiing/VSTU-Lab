@@ -19,16 +19,7 @@ class User {
 }
 
 let BDusers = [];
-let regEmail = $("#regEmail")
-  .val()
-  .toLowerCase();
-let regFirstName = $("#regFirstName")
-  .val()
-  .toLowerCase();
-let regLastName = $("#regLastName")
-  .val()
-  .toLowerCase();
-let regPassword = $("#regPassword").val();
+
 
 
 for (let i = 1; i <= localStorage.length; i++) {
@@ -40,6 +31,16 @@ for (let i = 0; i < BDusers.length; i++) {
 }
 
 $("#RegistrationBtn").on("click", function (event) {
+  let email = $("#regEmail")
+  .val()
+  .toLowerCase();
+let firstName = $("#regFirstName")
+  .val()
+  .toLowerCase();
+let lastName = $("#regLastName")
+  .val()
+  .toLowerCase();
+let password = $("#regPassword").val();
   for (let i = 0; i < BDusers.length; i++) {
     let user = BDusers[i];
 
@@ -62,10 +63,7 @@ $("#RegistrationBtn").on("click", function (event) {
   let counter = localStorage.length;
   let id = ++counter;
 
-  let email = regEmail;
-  let firstName = regFirstName;
-  let lastName = regLastName;
-  let password = regPassword;
+  
 
   let newUser = new User(id, email, firstName, lastName, password);
   localStorage.setItem(id, JSON.stringify(newUser));
