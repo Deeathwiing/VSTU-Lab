@@ -62,3 +62,12 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.gitignore.io/api/osx,jekyll,windows
+.vscode/settings.json
+tools/pixie.exe
+node_modules
+node_modules/.staging/@babel/code-frame-c960f198/README.md
+package-lock.json
+package.json
+.eslintrc.json
+.vscode/launch.json
+.vscode
