@@ -26,21 +26,17 @@ for (let i = 1; i <= localStorage.length; i++) {
   BDusers.push(JSON.parse(localStorage.getItem(i)));
 }
 
-for (let i = 0; i < BDusers.length; i++) {
-  let user = BDusers[i];
-}
-
 $("#RegistrationBtn").on("click", function (event) {
   let email = $("#regEmail")
-  .val()
-  .toLowerCase();
-let firstName = $("#regFirstName")
-  .val()
-  .toLowerCase();
-let lastName = $("#regLastName")
-  .val()
-  .toLowerCase();
-let password = $("#regPassword").val();
+    .val()
+    .toLowerCase();
+  let firstName = $("#regFirstName")
+    .val()
+    .toLowerCase();
+  let lastName = $("#regLastName")
+    .val()
+    .toLowerCase();
+  let password = $("#regPassword").val();
   for (let i = 0; i < BDusers.length; i++) {
     let user = BDusers[i];
 
@@ -53,9 +49,9 @@ let password = $("#regPassword").val();
   }
 
   if (
-    (regFirstName &&
-      regLastName &&
-      regPassword) == false
+    (firstName &&
+      lastName &&
+      password) == false
   ) {
     alert("Заполните все поля");
     return;
@@ -63,7 +59,6 @@ let password = $("#regPassword").val();
   let counter = localStorage.length;
   let id = ++counter;
 
-  
 
   let newUser = new User(id, email, firstName, lastName, password);
   localStorage.setItem(id, JSON.stringify(newUser));
