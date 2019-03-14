@@ -1,23 +1,23 @@
 function screenCheck() {
   if ($(window).width() <= 1210) {
-    $("#asideSearch")[0].style.width = "150px";
+    $('#asideSearch')[0].style.width = '150px';
   }
 
   if ($(window).width() <= 800) {
-    $("#asideSearchBtn,#asideSearch").addClass("mx-auto");
+    $('#asideSearchBtn,#asideSearch').addClass('mx-auto');
   }
 
   if ($(window).width() <= 450) {
-    $("#deleteAside").remove();
-    $("#section")[0].style.width = "100%";
-    const section = $("#Search")[0];
-    section.style.width = "200px";
-    section.style.marginRight = "5px";
-    $("#Reg")[0].style.width = "100%";
+    $('#deleteAside').remove();
+    $('#section')[0].style.width = '100%';
+    const section = $('#Search')[0];
+    section.style.width = '200px';
+    section.style.marginRight = '5px';
+    $('#Reg')[0].style.width = '100%';
   }
 }
 
 screenCheck();
-$(window).on("resize", () => {
+$(window).on('resize', () => {
   screenCheck();
 });

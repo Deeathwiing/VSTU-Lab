@@ -46,9 +46,8 @@ $('#RegistrationBtn').on('click', () => {
   }
 
   if (
-    (firstName
-      && lastName
-      && password) === false
+    // eslint-disable-next-line eqeqeq
+    (firstName && lastName && password) == false
   ) {
     alert('Заполните все поля');
     return;
