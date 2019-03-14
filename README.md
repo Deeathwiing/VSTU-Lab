@@ -1,7 +1,11 @@
 # VSTU-Lab
 rep for lab
 
-Open site: open index.html in browser.
+Open site: open index.html in browser/node.js.
+
+Stable branch -> master.
+
+
 If need administration: 
 1) open index.html in browser
 2) Sign up
