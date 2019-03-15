@@ -3,6 +3,8 @@ rep for lab
 
 Open site: open index.html in browser/node.js.
 
+Need use index.html?# only. (?#).
+
 Stable branch -> master.
 
 
