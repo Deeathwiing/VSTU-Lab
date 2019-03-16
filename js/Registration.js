@@ -1,13 +1,6 @@
 /* eslint-disable no-plusplus */
 class User {
-  constructor(
-    id,
-    email,
-    firstName,
-    lastName,
-    password,
-  ) {
-    this.id = id;
+  constructor(email, firstName, lastName, password) {
     this.firstName = firstName;
     this.lastName = lastName;
     this.email = email;
@@ -16,12 +9,8 @@ class User {
     this.administration = false;
   }
 }
-
-const BDusers = [];
-
-for (let i = 1; i <= localStorage.length; i++) {
-  BDusers.push(JSON.parse(localStorage.getItem(i)));
-}
+let BDusers = [];
+BDusers = localStorage.users ? JSON.parse(localStorage.users) : [];
 
 $('#RegistrationBtn').on('click', () => {
   const email = $('#regEmail')
@@ -34,12 +23,11 @@ $('#RegistrationBtn').on('click', () => {
     .val()
     .toLowerCase();
   const password = $('#regPassword').val();
+
   for (let i = 0; i < BDusers.length; i++) {
     const user = BDusers[i];
 
-    if (
-      email === user.email
-    ) {
+    if (email === user.email) {
       alert('Данный email занят');
       return;
     }
@@ -52,8 +40,10 @@ $('#RegistrationBtn').on('click', () => {
     alert('Заполните все поля');
     return;
   }
-  const id = ++localStorage.length;
-  const newUser = new User(id, email, firstName, lastName, password);
-  localStorage.setItem(id, JSON.stringify(newUser));
+
+  const newUser = new User(email, firstName, lastName, password);
+  BDusers.push(newUser);
+
+  localStorage.users = JSON.stringify(BDusers);
   $('#Reg').hide();
 });

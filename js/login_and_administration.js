@@ -1,23 +1,21 @@
 /* eslint-disable no-plusplus */
-const usersBase = [];
+
 let checklogin = false;
 let admin = false;
 let users;
 
-
-for (let i = 1; i <= localStorage.length; i++) {
-  usersBase.push(JSON.parse(localStorage.getItem(i)));
-}
+let usersBD = [];
+usersBD = localStorage.users ? JSON.parse(localStorage.users) : [];
 
 $('#login').on('click', () => {
-  for (let i = 0; i < usersBase.length; i++) {
-    users = usersBase[i];
+  for (let i = 0; i < usersBD.length; i++) {
+    users = usersBD[i];
 
-    const logEmail = $('#logEmail').val().toLowerCase();
+    const logEmail = $('#logEmail')
+      .val()
+      .toLowerCase();
 
-
-    if ((logEmail === users.email) && ($('#logPass').val() === users.password)) {
-      console.log(users.email);
+    if (logEmail === users.email && $('#logPass').val() === users.password) {
       $('.removeAfterReg').hide();
       $('.PersonalArea').removeClass('d-none');
       checklogin = true;
@@ -35,17 +33,30 @@ $('#login').on('click', () => {
   }
 });
 
-for (let i = 0; i < usersBase.length; i++) {
-  const userId = usersBase[i];
-
+for (let i = 0; i < usersBD.length; i++) {
+  const userId = usersBD[i];
 
   $('#adminTable').append(`
                <tr>
-                <th scope="row">${userId.id}</th>
+                <th scope="row">${i}</th>
                 <td>${userId.firstName}</td>
                 <td>${userId.lastName}</td>
                 <td>${userId.email}</td>
                 <td>${userId.deleteAccountRequest}</td>
+                <td><button class="btnForDelete btn-danger btn-block " id=btnForDelete-${i}
+}  >Delete User</button></td>
               </tr>
 `);
 }
+
+// eslint-disable-next-line func-names
+$('#adminTable').on('click', '.btnForDelete', function () {
+  const idToDelete = +$(this)
+    .attr('id')
+    .substr(13);
+
+  if (usersBD[idToDelete].deleteAccountRequest) {
+    usersBD.splice(idToDelete, 1);
+    localStorage.users = JSON.stringify(usersBD);
+  }
+});
