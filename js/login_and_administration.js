@@ -43,10 +43,17 @@ for (let i = 0; i < usersBD.length; i++) {
                 <td>${userId.lastName}</td>
                 <td>${userId.email}</td>
                 <td>${userId.deleteAccountRequest}</td>
-                <td><button class="btnForDelete btn-danger btn-block " id=btnForDelete-${i}
-}  >Delete User</button></td>
+                <td id="tdForBtn-${i}"></td>
               </tr>
 `);
+  /* if (!userId.deleteAccountRequest) {
+    $(`#btnForDelete-${i}`).remove();
+  } */
+  if (userId.deleteAccountRequest) {
+    $(`#tdForBtn-${i}`)
+      .append(`<button class="btnForDelete btn-danger btn-block " id=btnForDelete-${i}
+}  >Delete User</button>`);
+  }
 }
 
 // eslint-disable-next-line func-names
