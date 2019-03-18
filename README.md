@@ -1,4 +1,5 @@
 # VSTU-Lab
+It's old version,for new version go to https://github.com/Deeathwiing/VSTU-Lab-React.
 rep for lab
 
 Open site: open index.html in browser/node.js.
