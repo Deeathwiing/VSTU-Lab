@@ -22,5 +22,19 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "description": "rep for lab",
+  "main": ".eslintrc.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Deeathwiing/VSTU-Lab.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Deeathwiing/VSTU-Lab/issues"
+  },
+  "homepage": "https://github.com/Deeathwiing/VSTU-Lab#readme"
 }
